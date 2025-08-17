@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rifath | Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 transition duration-300">
+    <nav class="flex items-center justify-between px-6 py-4 bg-transparent backdrop-blur-md text-white">
+      <!-- Logo -->
+      <div class="text-xl font-semibold">Rifath</div>
+  
+      <!-- Hamburger Button (mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+  
+      <!-- Nav Links -->
+      <ul id="nav-links"
+          class="hidden md:flex space-x-6 font-medium text-sm transition-all">
+        <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-400">Skills</a></li>
+        <li><a href="#experience" class="hover:text-indigo-400">Experience</a></li>
+        <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 py-4 bg-gray-900 text-white">
+      <ul class="space-y-4 text-sm font-medium">
+        <li><a href="#about" class="block hover:text-indigo-400">About</a></li>
+        <li><a href="#skills" class="block hover:text-indigo-400">Skills</a></li>
+        <li><a href="#experience" class="block hover:text-indigo-400">Experience</a></li>
+        <li><a href="#projects" class="block hover:text-indigo-400">Projects</a></li>
+      </ul>
+    </div>
+  </header>
+  
+
+  <!-- Hero with Particles Background -->
+  <section id="home" class="relative flex items-center justify-center text-center px-4 py-16 bg-gray-900 overflow-hidden">
+  <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+  <div class="z-10 animate-fade-in w-full max-w-3xl mx-auto">
+
+    <div class="mb-12">
+      <img
+        src="/Portofolio/Portofolio Profile Pic.jpg"
+        alt="Profile photo"
+        class="w-56 h-56 rounded-full mx-auto border-4 border-gray-700 shadow-lg object-cover"
+      />
+    </div>
+
+    <h1 class="text-4xl font-semibold mb-4">Hi, I'm Rifath</h1>
+
+    <div class="text-2xl font-semibold text-gray-300 mb-4 overflow-hidden relative mx-auto" style="height: 32px; max-width: 100%; width: 100%;">
+      <div id="expertise-wrapper" class="absolute top-0 left-0 transition-transform duration-500 ease-in-out w-full">
+        <div class="flex items-center justify-center whitespace-nowrap h-[32px] w-full">Web Developer</div>
+        <div class="flex items-center justify-center whitespace-nowrap h-[32px] w-full">Outsystems Developer</div>
+        <div class="flex items-center justify-center whitespace-nowrap h-[32px] w-full">Software Tester</div>
+        <div class="flex items-center justify-center whitespace-nowrap h-[32px] w-full">Photography and Design Rookie</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- About -->
+  <section id="about" class="pt-4 px-4 max-w-4xl mx-auto bg-gray-900">
+    <h2 class="text-3xl font-bold mb-6 ml-4">About Me</h2>
+    <p class="text-lg text-gray-300 leading-relaxed ml-4 mr-auto text-justify">
+      Hi, my name is Rifath. I'm a graduate of Batam State Polytechnic, holding a Diploma III in Informatics Engineering. I have a strong interest in web and mobile application development, and I'm always curious to learn more about the technologies behind them.
+      Beyond coding, I also explore photography and graphic design as creative outlets. Whether it's building apps or capturing moments, I enjoy diving deep and experimenting with ideas that connect tech and creativity.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 ml-4">Experience</h2>
+      
+      <div class="flex flex-col gap-6">
+
+
+        <!-- Job 1-->
+        <div class="bg-gray-800 p-5 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-white">Packaged App Development Associates</h3>
+          <p class="text-sm text-gray-400">Accenture • Jan 2024 – Present</p>
+
+          <!-- Role 1 -->
+          <div class="mt-4">
+            <h4 class="text-lg font-medium text-white">Outsystems Developer</h4>
+            <ul class="list-disc list-inside text-gray-300 mt-2 leading-relaxed">
+              <li>Develop and maintain application using OutSystems</li>
+              <li>Work with business analysts to translate requirements into scalable solutions</li>
+              <li>Maintain system performance and optimize workflows</li>
+            </ul>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="mt-4">
+            <h4 class="text-lg font-medium text-white">Pega Quality Assurance</h4>
+            <ul class="list-disc list-inside text-gray-300 mt-2 leading-relaxed">
+              <li>Prepared data and test cases for testing</li>
+              <li>Execute test cases</li>
+              <li>Collaborated with developers to resolve bugs</li>
+              <li>Perform unit-test, sanity-test, system-integration test (SIT), and ent-to-end test</li>
+              <li>Report and documented defects using JIRA</li>
+            </ul>
+          </div>
+        </div>
+
+        
+        <!-- Job 2 -->
+        <div class="bg-gray-800 p-5 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold text-white">Junior Web Developer</h3>
+          <p class="text-sm text-gray-400">Batam State Polytechnic • Agu 2022 – Jul 2023</p>
+          <p class="text-gray-300 mt-2 leading-relaxed">
+            As an intern junior web developer, I'm responsible to:
+          </p>
+          <ul class="text-gray-300 mt-2 leading-relaxed list-disc list-inside">
+            <li>Gather and analyze user requirements</li>
+            <li>Design user interfaces and wireframes</li>
+            <li>Develop a web-based Student Achievement Record System</li>
+            <li>Build the front-end of a mobile-based Student Information System</li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="pt-6 pb-16 px-4 max-w-4xl mx-auto rounded">
+    <h2 class="text-3xl font-bold mb-6 ml-4">Projects</h2>
+    <div class="flex flex-col gap-8">
+
+      <!-- Project 1 -->
+          <div class="bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
+      <h3 class="text-xl font-semibold mb-2 text-white">Student Achievement Record System</h3>
+      <p class="text-gray-300 text-justify leading-relaxed mb-4">
+        A web-based system designed to help academic staff and students register, manage, and monitor student achievements such as competitions, certifications, and awards.
+      </p>
+
+      <!-- Image Slider -->
+      <div class="relative w-full max-w-md mx-auto">
+        <div class="overflow-hidden rounded-lg">
+          <img id="project1-slider-image" src="/Portofolio/prestasi_1.jpg" class="w-full h-64 object-cover rounded-lg transition duration-500 ease-in-out">
+        </div>
+        
+        <!-- Left Button -->
+        <button onclick="prevSlide('project1')" class="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#8592;
+        </button>
+        
+        <!-- Right Button -->
+        <button onclick="nextSlide('project1')" class="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+          &#8594;
+        </button>
+      </div>
+    </div>
+
+
+      <!-- Project 2 -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl font-semibold mb-2 text-white">Student Information System</h3>
+        <p class="text-gray-300 text-justify leading-relaxed mb-4">
+          A mobile-responsive system that provides students with real-time updates including academic calendars, announcements, and schedules.
+        </p>
+        <!-- Image Slider -->
+        <div class="relative w-full h-full max-w-md max-h-md mx-auto">
+          <div class="overflow-hidden rounded-lg flex items-center justify-center h-[500px] bg-black">
+            <img id="project2-slider-image" src="/Portofolio/SIM_Polibatam.jpg" class="max-h-full max-w-full object-contain transition duration-500 ease-in-out">
+          </div>
+          
+          <!-- Left Button -->
+          <button onclick="prevSlide('project2')" class="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+            &#8592;
+          </button>
+          
+          <!-- Right Button -->
+          <button onclick="nextSlide('project2')" class="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80">
+            &#8594;
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+
+  <!-- Add Font Awesome in your <head> for other icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <section id="skills" class="py-16 px-4 max-w-4xl mx-auto bg-gray-900">
+    <h2 class="text-3xl font-bold mb-8 ml-4">Skills</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Development Skills -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold text-white mb-4">Development</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-brands fa-html5 text-orange-500 w-5"></i> HTML
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-green-400 group-hover:drop-shadow-[0_0_6px_lime]">Proficient</span>
+          </li>
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-brands fa-css3-alt text-blue-500 w-5"></i> CSS
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+          </li>
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-brands fa-php text-purple-400 w-5"></i> PHP
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+          </li>
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-brands fa-js text-yellow-400 w-5"></i> JavaScript
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-orange-400 group-hover:drop-shadow-[0_0_6px_orange]">Beginner</span>
+          </li>
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-database text-green-400 w-5"></i> SQL
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+          </li>
+
+          <!-- OutSystems SVG -->
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5">
+                <circle fill="#E6382D" cx="256" cy="256" r="256"/>
+                <circle fill="#fff" cx="256" cy="256" r="128"/>
+                <circle fill="#E6382D" cx="256" cy="256" r="80"/>
+              </svg>
+              OutSystems
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-green-400 group-hover:drop-shadow-[0_0_6px_lime]">Proficient</span>
+          </li>
+
+          <!-- Flutter SVG -->
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5">
+                <path fill="#47C5FB" d="M14.9 141.1L76.3 79.6l43.3 43.2L58.2 184l-43.3-42.9z"/>
+                <path fill="#47C5FB" d="M76.3 79.6l43.3 43.2 89.4-89.4H132.1L76.3 79.6z"/>
+                <path fill="#00569E" d="M119.6 122.9l43.3 43.2-43.3 43.3L76.3 166l43.3-43.1z"/>
+                <path fill="#00B5F8" d="M162.9 166l-43.3 43.3 89.4-89.4 43.3 43.3-89.4 89.4L76.3 166h86.6z"/>
+              </svg>
+              Flutter
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-orange-400 group-hover:drop-shadow-[0_0_6px_orange]">Beginner</span>
+          </li>
+
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-brands fa-jira text-blue-400 w-5"></i> JIRA
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+          </li>
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-vial-circle-check text-teal-400 w-5"></i> SQA / Testing
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-green-400 group-hover:drop-shadow-[0_0_6px_lime]">Proficient</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+    <div class="flex flex-col gap-8">
+      
+
+      <!-- Design & Creativity Skills -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold text-white mb-4">Design & Creativity</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <i class="fa-brands fa-figma text-pink-400 w-5"></i> Figma
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+          </li>
+
+          <!-- Canva SVG -->
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5">
+                <circle fill="#00C4CC" cx="128" cy="128" r="128"/>
+                <path fill="#fff" d="M176 96c-16-16-40-20-60-10s-32 30-30 54c2 20 14 38 32 46 18 8 40 6 56-6 16-12 26-32 26-52 0-14-6-28-16-38z"/>
+              </svg>
+              Canva
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+          </li>
+
+          <!-- Snapseed SVG -->
+          <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+            <span class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5">
+                <path fill="#77B255" d="M128 0l128 128-128 128L0 128 128 0z"/>
+                <path fill="#A7D28B" d="M128 0v256L0 128 128 0z"/>
+              </svg>
+              Snapseed
+            </span>
+            <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-orange-400 group-hover:drop-shadow-[0_0_6px_orange]">Beginner</span>
+          </li>
+
+          <!-- User Interface SVG -->
+        <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+          <span class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5">
+              <rect x="16" y="48" width="224" height="160" rx="12" fill="#4ADE80"/>
+              <rect x="32" y="64" width="192" height="48" rx="6" fill="#86EFAC"/>
+              <rect x="32" y="128" width="80" height="64" rx="6" fill="#BBF7D0"/>
+              <rect x="128" y="128" width="96" height="64" rx="6" fill="#BBF7D0"/>
+            </svg>
+            User Interface
+          </span>
+          <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Intermediate</span>
+        </li>
+        </ul>
+      </div>
+
+      <!-- Languages -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+      <h3 class="text-xl font-semibold text-white mb-4">Languages</h3>
+      <ul class="space-y-3">
+        <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+          <span class="flex items-center gap-2">
+            <img src="https://flagcdn.com/w20/id.png" alt="Indonesian Flag" class="w-5 h-4 rounded-sm">
+            Indonesian
+          </span>
+          <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-green-400 group-hover:drop-shadow-[0_0_6px_lime]">Native</span>
+        </li>
+        <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+          <span class="flex items-center gap-2">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English Flag" class="w-5 h-4 rounded-sm">
+            English
+          </span>
+          <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_6px_gold]">Proficient</span>
+        </li>
+        <li class="flex items-center justify-between text-gray-300 group hover:font-bold">
+          <span class="flex items-center gap-2">
+            <img src="https://flagcdn.com/w20/nl.png" alt="Dutch Flag" class="w-5 h-4 rounded-sm">
+            Dutch
+          </span>
+          <span class="text-sm text-gray-400 group-hover:font-bold group-hover:text-orange-400 group-hover:drop-shadow-[0_0_6px_orange]">Beginner</span>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Resume -->
+  <section id="resume" class="py-16 px-4 max-w-4xl mx-auto bg-gray-800 rounded">
+    <h2 class="text-3xl font-bold mb-6 ml-4">Resume</h2>
+
+    <!--<p class="text-gray-300 ml-4">Download my resume <a href="#" class="text-blue-400 underline hover:text-blue-300">here</a>.</p>-->
+    <!-- <button id="downloadBtn" class="bg-blue-600 text-white px-4 py-2 ml-4 rounded hover:bg-blue-700">
+      Download Resume
+    </button> -->
+
+    <a href="/Portofolio/CV_T.M.Rifath_Aqil_Ghifari.pdf" download="Resume_T.M.Rifath_Aqil_Ghifari.pdf" 
+      class="bg-blue-600 text-white px-4 py-2 ml-4 rounded hover:bg-blue-700">
+        Download CV
+    </a>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 max-w-4xl mx-auto bg-gray-900">
+    <h2 class="text-3xl font-bold mb-6 ml-4">Contact Me</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded" />
+      <input type="email" placeholder="Your Email" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded" />
+      <textarea placeholder="Your Message" class="w-full border border-gray-700 bg-gray-800 text-white p-3 rounded" rows="5"></textarea>
+      <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400">
+    <p>© 2025 Rifath. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Animations -->
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out;
+    }
+  </style>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#00ffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ffff",
+          opacity: 0.3,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+  
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById("expertise-wrapper");
+    const items = wrapper.children;
+    const itemHeight = items[0].offsetHeight;
+    const total = items.length;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % total;
+      wrapper.style.transform = `translateY(-${index * itemHeight}px)`;
+    }, 1500); // every 1.5s
+  });
+  </script>
+
+  <script>
+  const sliders = {
+    project1: {
+      images: [
+        '/Portofolio/prestasi_2.jpg',
+        '/Portofolio/prestasi_1.jpg'
+      ],
+      index: 0
+    },
+
+    project2: {
+      images: [
+        '/Portofolio/SIM_Polibatam_2.jpg',
+        '/Portofolio/SIM_Polibatam.jpg'
+    ],
+      index: 1
+    }
+  };
+
+  function showSlide(id) {
+    const slider = sliders[id];
+    const imgElement = document.getElementById(`${id}-slider-image`);
+    imgElement.src = slider.images[slider.index];
+  }
+
+  function nextSlide(id) {
+    const slider = sliders[id];
+    slider.index = (slider.index + 1) % slider.images.length;
+    showSlide(id);
+  }
+
+  function prevSlide(id) {
+    const slider = sliders[id];
+    slider.index = (slider.index - 1 + slider.images.length) % slider.images.length;
+    showSlide(id);
+  }
+</script>
+
+<script>
+ document.getElementById('downloadBtn').addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.href = '/Portofolio/CV_T.M.Rifath_Aqil_Ghifari.pdf';
+  link.download = 'CV_T.M.Rifath_Aqil_Ghifari.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
+
+</script>
+  
+</body>
+</html>
